@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% if title %}
-    <title>Flask Blog - {{ title }} </title>
-    {% else %} 
-    <title>Flask Blog</title>
-    {% endif %}
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+{% extends 'layout.html' %} 
+{% block content %}
+    <h1> About Page</h1>
+{% endblock content %}
 
-  <body>
-    <h1>About Page</h1>
-  </body>
-</html>
+

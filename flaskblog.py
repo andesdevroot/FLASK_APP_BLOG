@@ -34,18 +34,19 @@ def about():
 @app.route('/register')
 def register():
     form = RegistrationForm()
-    return render_template('register.html', title='About')
+    return render_template('register.html', title='Register', form=form)
 
    
-@app.route('/register')
-def register():
-    form = RegistrationForm()
-    return render_template('register.html', title='About')
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Login', form=form)
 
 # script para que siempre la app este en modo debugger
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
